@@ -3,6 +3,10 @@ FROM openjdk:8-jdk-alpine
 ENV ATLAS_VERSION 8.0.7
 ENV ATLAS_MAVEN_VERSION 3.5.4
 
+# Install misc tools
+RUN apk add --no-cache \
+            git
+
 # Dowload Atlassian SDK
 RUN wget -O /opt/atlassian-plugin-sdk-${ATLAS_VERSION}.tar.gz \
          https://maven.atlassian.com/content/repositories/atlassian-public/com/atlassian/amps/atlassian-plugin-sdk/${ATLAS_VERSION}/atlassian-plugin-sdk-${ATLAS_VERSION}.tar.gz
