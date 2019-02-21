@@ -1,7 +1,7 @@
 # docker-atlassian-sdk
 Docker image for running atlas-mvn builds.
 
-- Also includes: git
+- Also includes: git, openssh
 - Optional: Maven Artifactory connectivity via `settings.xml`
 
 ## Maven Artifactory Connectivity

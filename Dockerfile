@@ -5,7 +5,8 @@ ENV ATLAS_MAVEN_VERSION 3.5.4
 
 # Install misc tools
 RUN apk add --no-cache \
-            git
+            git \
+            openssh
 
 # Dowload Atlassian SDK
 RUN wget -O /opt/atlassian-plugin-sdk-${ATLAS_VERSION}.tar.gz \
